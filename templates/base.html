@@ -9,19 +9,21 @@
   {% else %}
   <title>Nandi TOYOTA</title>
   {% endif %}
-  {% include 'include/style.html' %}
-
 {% block custom_css %}{% endblock %}
 </head>
 
 <body>
 
+{% include 'include/navbar.html' %}
 
 {% block content %}
 {% endblock %}
-{% include 'include/scripts.html' %}
+
+{% include 'include/footer.html' %}
+
 {% block custom_js %}{% endblock %}
 {% include 'include/notification.html' %}
+
 </body>
 
 </html>
